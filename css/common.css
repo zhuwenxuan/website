@@ -12,11 +12,12 @@ h1, h2, h3, h4, h5, h6 {margin: 25px 0;line-height: 1.1em;color: #0B0B0B;font-we
 .header h1 span {font-weight: bold;}
 .nav ul, .nav li {list-style: none;margin: 0;padding: 0;position: relative;}
 .nav {float: left;width: 900px;margin: 0px 0px 0px;padding: 0 0px;position: relative;z-index: 333;}
-.nav > ul {font-size: 16px;float: right;font-weight: bold;}
+.nav > ul {width:370px;font-size: 16px;float: right;font-weight: bold;background: url("../images/headbg.png") no-repeat;padding-left:70px;}
 .nav > ul > li.current, .nav > ul > li:hover {background-position: 50% 0;}
-.nav > ul > li {float: left;position: relative;padding-bottom: 10px;margin-bottom: -10px;z-index: 666;}
-a,.nav > ul > li.current > a span {color: #AE3B44;}
-.nav > ul > li > a {line-height: 80px;padding: 0 13px 0px 13px;float: left;z-index: 99999;position: relative;}
+.nav > ul > li {float: left;position: relative;padding-bottom: 10px;z-index: 666;}
+a,.nav > ul > li.current > a span {font: 14px/1.75 "宋体","Arial Narrow",HELVETICA;color: #ccc;}
+.nav > ul > li > a {line-height: 70px;padding: 0 13px 0px 13px;float: left;z-index: 99999;position: relative;}
+.nav span{color: white;}
 /*header end*/
 
 /*footer*/

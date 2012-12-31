@@ -1,6 +1,5 @@
 @import "common.css";
 
-.map{width:697px;float: left;}
-.concatway{width: 260px;height: 300px;float: left;}
 .concatway h3,.map h3{font-weight: bold;font-size: 20px;}
 .concatway p{padding: 5px;font-size: 18px;line-height: 30px;}
+.content{width: 800px;margin: 0 auto;}
