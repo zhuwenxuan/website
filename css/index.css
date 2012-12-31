@@ -1,73 +1,178 @@
 @import "common.css";
-.show{margin: 0 auto;}
-.showimg,.handleimg{float: left;}
-.showimg{width: 592px;height: 441px;}
-.handleimg{height:441px;border: 1px solid red;}
 
-.main .mtop{margin-top: 20px;}
-.main .mtop h1{font-size: 22px;font-weight: bold;}
-.mtop ul li {_background-image: none;float: left;margin-bottom: 16px;padding: 0 0 6px 8px;width: 237px;}
-.mtop ul li div.icon {background-color: white;text-align: center;width: 61px;float: left;margin-right: 10px;}
-.mtop ul li div.des {color: #575757;font-size: 12px;}
-.mtop ul li div.des h3 {font-family: "微软雅黑","宋体";font-size: 18px;margin: 4px 0;}
-.main .title, .titleH1 {font-family: "微软雅黑","宋体";font-size: 22px;color: #707070;position: relative;height: 34px;margin-bottom: 8px;margin-left: 6px;}
-.main .title span, .titleH1 span {position: absolute;top: 0;left: 0;z-index: 2;color: #707070;}
-.main .title span.bg, .titleH1 span.bg {left: 1px;bottom: -1px;z-index: 1;color: #CECECE;}
+.show {
+    margin: 0 auto;
+}
 
-.mleft{float:left;width: 980px;}
-.img-wrap {border: 1px solid #EEE;text-align: center;overflow: hidden;}
-.mleft ul li div {border: 1px solid #A8A8A8;background-color: white;margin: 0 5px;text-align: center;position: relative;}
-.mleft ul li {width: 160px;padding-bottom: 4px;float: left;margin-right: 14px;margin-bottom: 16px;font-size: 12px;}
+.showimg, .handleimg {
+    float: left;
+}
 
-.mright{width:180px;float: left;}
-.mright ul li {color: #606060;font-family: "宋体";line-height: 24px;}
-.mright ul li a{color: #606060;cursor: pointer;}
+.showimg {
+    width: 592px;
+    height: 441px;
+}
 
+.handleimg {
+    height: 441px;
+    border: 1px solid red;
+}
 
+.main .mtop {
+    margin-top: 20px;
+}
+
+.main .mtop h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.mtop ul li {
+    _background-image: none;
+    float: left;
+    margin-bottom: 16px;
+    padding: 0 0 6px 8px;
+    width: 237px;
+}
+
+.mtop ul li div.icon {
+    background-color: white;
+    text-align: center;
+    width: 61px;
+    float: left;
+    margin-right: 10px;
+}
+
+.mtop ul li div.des {
+    color: #575757;
+    font-size: 12px;
+}
+
+.mtop ul li div.des h3 {
+    font-family: "微软雅黑", "宋体";
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.main .title, .titleH1 {
+    font-family: "微软雅黑", "宋体";
+    font-size: 22px;
+    color: #707070;
+    position: relative;
+    height: 34px;
+    margin-bottom: 8px;
+    margin-left: 6px;
+}
+
+.main .title span, .titleH1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #707070;
+}
+
+.main .title span.bg, .titleH1 span.bg {
+    left: 1px;
+    bottom: -1px;
+    z-index: 1;
+    color: #CECECE;
+}
+
+.mleft {
+    float: left;
+    width: 980px;
+}
+
+.img-wrap {
+    border: 1px solid #EEE;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mleft ul li div {
+    border: 1px solid #A8A8A8;
+    background-color: white;
+    margin: 0 5px;
+    text-align: center;
+    position: relative;
+}
+
+.mleft ul li {
+    width: 160px;
+    padding-bottom: 4px;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.mright {
+    width: 180px;
+    float: left;
+}
+
+.mright ul li {
+    color: #606060;
+    font-family: "宋体";
+    line-height: 24px;
+}
+
+.mright ul li a {
+    color: #606060;
+    cursor: pointer;
+}
 
 ul.pagination {
-position: absolute;
-left: 720px;
+    position: absolute;
+    left: 720px;
 }
+
 ul.pagination li {
-width: 593px;
-height: 110px;
-margin-bottom: 1px;
-overflow: hidden;
-vertical-align: top;
+    width: 593px;
+    height: 110px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    vertical-align: top;
 }
+
 ul.pagination li a:hover, ul.pagination li.active a {
-background: url(../images/banner-act.png) no-repeat left top;
+    background: url(../images/banner-act.png) no-repeat left top;
 }
+
 ul.pagination li a {
-display: block;
-width: 358px;
-height: 110px;
-position: relative;
-text-decoration: none;
-cursor: pointer;
-background: url(../images/banner-bg.png) no-repeat right top;
-color: white;
-letter-spacing: -1px;
-font-size: 18px;
-line-height: 1em;
+    display: block;
+    width: 358px;
+    height: 110px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    background: url(../images/banner-bg.png) no-repeat right top;
+    color: white;
+    letter-spacing: -1px;
+    font-size: 18px;
+    line-height: 1em;
 }
+
 ul.pagination li a:hover strong, ul.pagination li.active a strong {
-font-weight: bold;
+    font-weight: bold;
 }
+
 ul.pagination li a strong {
-display: block;
-padding: 27px 0 0 25px;
-font-weight: normal;
+    display: block;
+    padding: 27px 0 0 25px;
+    font-weight: normal;
 }
+
 ul.pagination li a img {
-margin: -17px 10px 0 0;
-float: left;
+    margin: -17px 10px 0 0;
+    float: left;
 }
+
 img {
-border: 0;
-vertical-align: top;
-text-align: left;
+    border: 0;
+    vertical-align: top;
+    text-align: left;
 }
 
 
