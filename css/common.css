@@ -1,0 +1,25 @@
+@import "reset.css";
+body{font: 12px/150% Arial, Verdana, Helvetica, sans-serif;margin: 0;padding: 0;color: #393939;background: #FDFDFD url(../images/bg-1.jpg) 50% 0 no-repeat;}
+.clear{clear: both;}
+.wrapper{width: 100%;float: left;overflow: hidden;position: relative;}
+.container {margin: 0 auto;width: 980px;}
+h1, h2, h3, h4, h5, h6 {margin: 25px 0;line-height: 1.1em;color: #0B0B0B;font-weight: normal;}
+
+/*header start*/
+.header {position: relative;z-index: 999;margin: 20px 0;}
+.header h1 {float: left;margin: 0 0 -80px 0;height: 80px;padding: 0;width: 300px;position: relative;z-index: 1000;}
+.header h1 a {font-size: 36px;color: #262626;text-decoration: none;line-height: 1em;background: url(../images/openlogic-logo.png) 0 0 no-repeat;padding: 0 0 0 22px;display: block;margin-top: 20px;}
+.header h1 span {font-weight: bold;}
+.nav ul, .nav li {list-style: none;margin: 0;padding: 0;position: relative;}
+.nav {float: left;width: 900px;margin: 0px 0px 0px;padding: 0 0px;position: relative;z-index: 333;}
+.nav > ul {font-size: 16px;float: right;font-weight: bold;}
+.nav > ul > li.current, .nav > ul > li:hover {background-position: 50% 0;}
+.nav > ul > li {float: left;position: relative;padding-bottom: 10px;margin-bottom: -10px;z-index: 666;}
+a,.nav > ul > li.current > a span {color: #AE3B44;}
+.nav > ul > li > a {line-height: 80px;padding: 0 13px 0px 13px;float: left;z-index: 99999;position: relative;}
+/*header end*/
+
+/*footer*/
+.footer {background: url(../images/ftbg.png) no-repeat 0 30px;height: 80px;color: #707070;text-align: center;line-height: 24px;padding-top: 39px;}
+.footer a {color: #707070;}
+.footer p span {color: #A1A1A1;}

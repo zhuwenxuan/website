@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <script type="text/javascript" src="js/utils-api.js"></script>
+    <title></title>
+    <style type="text/css">
+        /*img{border: 0;vertical-align: top;text-align: left;}*/
+        /*.xfui-showimg-wrap img.hide{display: none;}*/
+        /*.xfui-showimg-wrap img.current{display: block;}*/
+        /*.xfui-showimghandle-handle .current{display: block;width: 358px;height: 110px;background: url(images/banner-act.png) no-repeat left top;}*/
+        /*.xfui-showimghandle-handle strong{font-size: 1.92em;color: white;letter-spacing: -1px;display: inline-block;padding: 27px 0 0 25px;font-weight: normal;}*/
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="header">
+            <h1><a href="./index.html"><span>open</span>logic</a></h1>
+
+            <div class="nav">
+                <ul>
+                    <li class="current"><a href="./index.html"><span>首页</span></a></li>
+                    <li><a href="#"><span>特色</span></a>
+                    </li>
+                    <li><a href="#"><span>案例</span></a>
+                    </li>
+                    <li><a href="#"><span>关于</span></a>
+                    </li>
+                    <li><a href="#"><span>联系我们</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="content">
+            <div class="show">
+                <div class="showimg">
+                    <img id="showimg" src="images/slide1-big.jpg" alt="">
+                </div>
+                    <ul class="pagination" id="handle">
+                     <li class="active"><a href="javascript:void(0)" rel="1" onclick="changeImg(this)"><strong><img src="images/slide1.png" alt=""><br>成功
+                        案例</strong><span>&nbsp;</span></a></li>
+                     <li class=""><a href="javascript:void(0)" rel="2" onclick="changeImg(this)"><strong><img src="images/slide2.png" alt=""><br>7*24小时不间断服务</strong><span>&nbsp;</span></a></li>
+                     <li class=""><a href="javascript:void(0)" rel="3" onclick="changeImg(this)"><strong><img src="images/slide3.png" alt=""><br>丰富的建站经验</strong><span>&nbsp;</span></a></li>
+                     <li><a href="javascript:void(0)" rel="4" onclick="changeImg(this)"><strong><img src="images/slide4.png" alt=""><br>提供优质的解决方案</strong><span>&nbsp;</span></a></li>
+                  </ul>
+
+                <div class="clear"></div>
+            </div>
+            <div class="main">
+                <div class="mtop">
+                    <div class="title">
+                        <span>产品特色</span>
+                        <span class="bg">产品特色</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <img src="http://img-static.phpcms.cn/statics/images/new_images/ts2.png">
+                            </div>
+                            <div class="des">
+                                <h3>创建多模型</h3>
+                                <p>自定义模型功能，不会编程就实现各种信息发布和检索。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="http://img-static.phpcms.cn/statics/images/new_images/ts1.png">
+                            </div>
+                            <div class="des">
+                                <h3>MVC框架</h3>
+                                <p>框架结构清晰、易维护、模块化、扩展性好，性能稳定。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="http://img-static.phpcms.cn/statics/images/new_images/ts6.png">
+                            </div>
+                            <div class="des">
+                                <h3>功能模块化</h3>
+                                <p>已有文章、图片、下载模型，在此基础上可扩展更多模块。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="http://img-static.phpcms.cn/statics/images/new_images/ts7.png">
+                            </div>
+                            <div class="des">
+                                <h3>模板引擎</h3>
+                                <p>让前端人员可独立完成模板制作及数据调用。</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="mleft">
+                    <div class="title">
+                        <span>经典案例</span>
+                        <span class="bg">经典案例</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://www.phpcms.cn/attr.php?authcode=989ef690a0f9bfcb65a6d81732eec7d9-6370-i.gif" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://uploadfile.phpcms.cn/uploadfile/2012/0827/20120827093545522.jpg" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://www.phpcms.cn/attr.php?authcode=989ef690a0f9bfcb65a6d81732eec7d9-6370-i.gif" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://uploadfile.phpcms.cn/uploadfile/2012/0827/20120827093545522.jpg" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://www.phpcms.cn/attr.php?authcode=989ef690a0f9bfcb65a6d81732eec7d9-6370-i.gif" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://uploadfile.phpcms.cn/uploadfile/2012/0827/20120827093545522.jpg" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://www.phpcms.cn/attr.php?authcode=989ef690a0f9bfcb65a6d81732eec7d9-6370-i.gif" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <a href="http://www.cnss.com.cn" target="_blank">
+                                    <img src="http://uploadfile.phpcms.cn/uploadfile/2012/0827/20120827093545522.jpg" style="display: inline-block; width: 148px; height: 37px;">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!--<div class="mright">-->
+                    <!--<div class="title">-->
+                        <!--<span>公司动态</span>-->
+                        <!--<span class="bg">公司动态</span>-->
+                    <!--</div>-->
+                    <!--<ul>-->
+                        <!--<li>-->
+                            <!--<a>asdfasdf</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                                                    <!--<a>asdfasdf</a>-->
+                                                <!--</li>-->
+                        <!--<li>-->
+                                                    <!--<a>asdfasdf</a>-->
+                                                <!--</li>-->
+                        <!--<li>-->
+                                                    <!--<a>asdfasdf</a>-->
+                                                <!--</li>-->
+                        <!--<li>-->
+                                                    <!--<a>asdfasdf</a>-->
+                                                <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer">
+        	<p><a href="http://www.phpcms.cn/html/page/aboutus/">联系方式</a><span> | </span><a href="http://www.phpcms.cn/html/page/aboutus/">关于我们</a><span> | </span><a href="http://www.phpcms.cn/html/page/joinus/">招聘信息</a><span> | </span><a href="http://www.phpcms.cn/html/page/copyright/">版权声明</a><span> | </span><a href="http://www.snda.com/cn/fstpage.html" target="_blank">关于盛大</a></p>
+            <p>CopyRight © 2006-2012 上海盛大网络发展有限公司 增值电信业务经营许可证 B2-20040053 沪ICP备10212628号-10
+
+        </p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function changeImg(obj){
+       var imgs = obj.getElementsByTagName("img"),
+               showimg = document.getElementById("showimg")
+            utils = xf.ui.Utils;
+        clearActive()
+        for(var i = 0,img;img=imgs[i++];){
+            showimg.src = img.src.replace(".png","-big.jpg")
+        }
+        utils.addClass(obj.parentNode,"active");
+    }
+    function clearActive(){
+        var ul = document.getElementById('handle'),
+              childlist = ul.childNodes;
+        for(var i= 0,child;child=childlist[i++];){
+            if(child&&child.nodeType==1&&/li/ig.test(child.tagName))
+            utils.removeClasses(child,"active");
+        }
+    }
+</script>
+</body>
+</html>
