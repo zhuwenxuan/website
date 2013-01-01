@@ -3,16 +3,17 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/model.css" type="text/css" />
+<script type="text/javascript" src="js/utils-api.js"></script>
 <title>成功案例</title>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="container">
 			<div class="header">
-				<h1>
-					<a href="./index.html"><span>open</span>logic</a>
-				</h1>
 
+				<h1>
+					<a href="./index.html"></a>
+				</h1>
 				<div class="nav">
 					<ul>
 						<li class="current"><a href="./index.html"><span>首页</span></a></li>
@@ -23,51 +24,48 @@
 					</ul>
 				</div>
 				<div class="clear"></div>
+                <div class="conthr">
+                    成功案例
+                </div>
 			</div>
-			<div class="content">
-				<div class="item">
-					<h3>分类</h3>
+            <div class="content">
+
+			<div id="itemwrap">
+				<div type="product" class="item">
+					<h3>外贸产品展示</h3>
 					<img src="images/1.png">
 					<p class="desc">
 						中国的外贸，逐渐成为我们贸易的主流，生活中我们越来越依赖于网络。它们都属于服务性行业，外贸网站建设是公司在发展过程中必不可少的，现在贸易基本都针对国内和国外的形式进行着，另外外贸网站模板是网站建设中不可忽视的
 					</p>
-				</div>
-				<div class="item">
-					<h3>分类</h3>
+					<h3>网站标题</h3>
 					<img src="images/2.png">
 					<p class="desc">建材装饰公司网站</p>
 				</div>
-				<div class="clear"></div>
-				<div class="item">
-					<h3>分类</h3>
+				<div class="item" type="house">
+					<h3>网站标题</h3>
 					<img src="images/3.png">
 					<p class="desc">
 						糕点发展起来了，销路和销量也是一个问题，在网络发展迅速的情况下，糕点网站建设成为一个打开市场的窗口，网络让物资迅速的从供求那边准确及时供应到所需地。
 						</p>
-				</div>
-				<div class="item">
-					<h3>分类</h3>
+					<h3>网站标题</h3>
 					<img src="images/4.png">
 					<p class="desc">电脑监控科技公司红色网站模板</p>
 				</div>
-								<div class="item">
-					<h3>分类</h3>
+				<div class="item" type="business">
+					<h3>网站标题</h3>
 					<img src="images/5.png">
 					<p class="desc">电脑监控科技公司红色网站模板</p>
-				</div>
-								<div class="item">
-					<h3>分类</h3>
+					<h3>网站标题</h3>
 					<img src="images/6.png">
 					<p class="desc">电脑监控科技公司红色网站模板</p>
 				</div>
-								<div class="item">
-					<h3>分类</h3>
+				<div class="item" type="gateway">
+					<h3>网站标题</h3>
 					<img src="images/7.png">
 					<p class="desc">电脑监控科技公司红色网站模板</p>
 				</div>
-				<div class="clear"></div>
 			</div>
-
+            </div>
 			<div class="footer">
 				<p>
 					<a href="http://www.phpcms.cn/html/page/aboutus/">联系方式</a><span>
@@ -81,5 +79,85 @@
 			</div>
 		</div>
 	</div>
+    <div class="fixnav">
+        <ul id="leftnav">
+            <li type="product" class="current">产品展示</li>
+            <li type="house">房屋中介</li>
+            <li type="business">商务网站</li>
+            <li type="gateway">门户网站</li>
+        </ul>
+    </div>
+<script type="text/javascript">
+    (function(){
+        var utils = xf.ui.Utils;
+        var ItemWrap = {
+            itemlist : function(){
+                var items = document.getElementById("itemwrap").childNodes,
+                        itemarr = [];
+                for(var i = 0,item;item=items[i++];){
+                    if(item.nodeType==1&&utils.hasClass(item,"item")){
+                        itemarr.push(item);
+                    }
+                }
+                return itemarr;
+            }(),
+            hideItem:function(index){
+                if(index!=undefined){
+                    this.itemlist[index].style.display = "none";
+                }else{
+                    for(var i= 0,item;item=this.itemlist[i++];){
+                        item.style.display = "none";
+                    }
+                }
+            },
+            showItem:function(type){
+                this.hideItem();
+                for(var i = 0,item;item=this.itemlist[i++];){
+                    if(item.getAttribute("type")==type){
+                        item.style.display = "";
+                    }
+                }
+            }
+        }
+        ItemWrap.showItem(0)
+        var LeftNav = {
+            navlist:function(){
+                var navs = document.getElementById('leftnav').childNodes,
+                        me = this,
+                        navarr = [];
+                for(var i= 0,nav;nav=navs[i++];){
+                    if(nav.nodeType==1&&/li/ig.test(nav.tagName)){
+                        var type = nav.getAttribute("type");
+                        (function(type){
+                            nav.onclick = function(){
+                                LeftNav.addCurrent(this);
+                                ItemWrap.showItem(type);
+                                window.scrollTo(0,0);
+                            }
+                        })(type);
+                        navarr.push(nav);
+                    }
+                }
+                return navarr;
+            }(),
+            removeCurrent:function(index){
+                if(index!=undefined){
+                    utils.removeClasses(this.navlist[index],"current");
+                }else{
+                    for(var i= 0,nav;nav=this.navlist[i++];){
+                        utils.removeClasses(nav,"current");
+                    }
+                }
+            },
+            addCurrent:function(nav){
+                this.removeCurrent();
+                if(nav){
+                    utils.addClass( nav,"current");
+                }
+            }
+        }
+        ItemWrap.showItem("product");
+    })()
+</script>
 </body>
 </html>

@@ -30,6 +30,15 @@
             }
             return t;
         },
+        hasClass:function (element, className) {
+            className = this.trim(className).replace(/[ ]{2,}/g,' ').split(' ');
+            for(var i = 0,ci,cls = element.className;ci=className[i++];){
+                if(!new RegExp('\\b' + ci + '\\b').test(cls)){
+                    return false;
+                }
+            }
+            return i - 1 == className.length;
+        },
         trim:function (str) {
             return str.replace(/(^[ \t\n\r]+)|([ \t\n\r]+$)/g, '');
         },

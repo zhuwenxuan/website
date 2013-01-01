@@ -1,14 +1,14 @@
 @import "reset.css";
-body{font: 12px/150% Arial, Verdana, Helvetica, sans-serif;margin: 0;padding: 0;color: #393939;background: #FDFDFD url(../images/bg-1.jpg) 50% 0 no-repeat;}
+body{font: 12px/150% Arial, Verdana, Helvetica, sans-serif;margin: 0;padding: 0;color: #393939;background: #FDFDFD;}
 .clear{clear: both;}
-.wrapper{width: 100%;float: left;overflow: hidden;position: relative;}
+.wrapper{width: 100%;float: left;overflow: hidden;position: relative;background: url("../images/wrapbg.png") no-repeat;}
 .container {margin: 0 auto;width: 980px;}
 h1, h2, h3, h4, h5, h6 {margin: 25px 0;line-height: 1.1em;color: #0B0B0B;font-weight: normal;}
 
 /*header start*/
 .header {position: relative;z-index: 999;margin: 20px 0;}
-.header h1 {float: left;margin: 0 0 -80px 0;height: 80px;padding: 0;width: 300px;position: relative;z-index: 1000;}
-.header h1 a {font-size: 36px;color: #262626;text-decoration: none;line-height: 1em;background: url(../images/openlogic-logo.png) 0 0 no-repeat;padding: 0 0 0 22px;display: block;margin-top: 20px;}
+.header h1 {margin: 0 auto ;width:800px;height: 80px;padding: 0;position: relative;z-index: 1000;}
+.header h1 a {font-size: 36px;color: #262626;text-decoration: none;line-height: 1em;background: url(../images/logo.png) 0 0 no-repeat;padding: 0 0 0 22px;display: block;height: 132px;width:200px;}
 .header h1 span {font-weight: bold;}
 .nav ul, .nav li {list-style: none;margin: 0;padding: 0;position: relative;}
 .nav {float: left;width: 900px;margin: 0px 0px 0px;padding: 0 0px;position: relative;z-index: 333;}
@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {margin: 25px 0;line-height: 1.1em;color: #0B0B0B;font-we
 a,.nav > ul > li.current > a span {font: 14px/1.75 "宋体","Arial Narrow",HELVETICA;color: #ccc;}
 .nav > ul > li > a {line-height: 70px;padding: 0 13px 0px 13px;float: left;z-index: 99999;position: relative;}
 .nav span{color: white;}
+.conthr{height: 80px;background: url("../images/bg-page-title.png") repeat;width:800px;margin: 0 auto;filter: alpha(opacity=80);
+-moz-opacity: 0.8;
+opacity: 0.8;}
 /*header end*/
 
 /*footer*/
