@@ -124,12 +124,11 @@
 }
 
 ul.pagination {
-    position: absolute;
-    left: 720px;
+    float: left;
+    margin-left: -16px;
 }
 
 ul.pagination li {
-    width: 593px;
     height: 110px;
     margin-bottom: 1px;
     overflow: hidden;
